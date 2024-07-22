@@ -1,44 +1,11 @@
 
-
-Introdução: Explicação do projeto e suas funcionalidades.
-Setup do Projeto: Passo a passo para configurar o ambiente de desenvolvimento.
-Endpoints da API:
-POST /data: Recebe dados em tempo real.
-POST /data/csv: Recebe um arquivo CSV com dados.
-Frontend: Instruções para rodar o frontend e como usar a interface.
-Diagramas e Capturas de Tela: Para ilustrar a arquitetura e a interface do usuário.
-
-Authentication
-POST /auth/register - Register a new user
-POST /auth/login - Login and receive a JWT token
-Sensor Data
-POST /data - Save real-time sensor data
-POST /data/csv - Upload a CSV file with sensor data
-GET /data/average - Get average sensor data for specified period (24h, 48h, 1w, 1m)
-Frontend Pages
-/ - Home page displaying sensor data averages
-/login - Login page
-/register - Register page
-License
-This project is licensed under the MIT License.
-
-
-O que falta ser feito agora?
-- Acesso ao banco okay
-- Adicionar pelo json okay
-- adciionar pelo csv
-- Ler no front  
-- Fazer tela de login usando react-hook-form e zod
-- criar usuário.
-- Criar dois botões que vão para as rotas
-- Implementa o sair.
-
-
-
-Para salvar arquivos a partir do csv
-curl -X POST -F 'file=@/home/varner/file-test.csv' http://localhost:8080/data/csv
-
 # Projeto para Sensor
+
+Para baixar o projeto e configurar:
+
+- git clone git@github.com:VarnerDamascenoJr/oil-gas-sensor-project.git
+- npm install -> dentro de cada pasta.
+
 
 ### Front End
 O Front foi construído de forma bem simples, pois, pelo pouco tempo de projeto, foquei bem mais no back end. 
