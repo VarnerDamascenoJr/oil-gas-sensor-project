@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon",
+    "test": "jest",
+    "generate-report": "./generate_report.sh > report.txt",
+    "run-load-test": "k6 run --out json=k6-output.json ./load-test/loadTest.ts"
   },
   "keywords": [],
   "author": "",
@@ -12,12 +15,34 @@
   "dependencies": {
     "@prisma/client": "^5.16.2",
     "@types/express": "^4.17.21",
+    "@types/express-jwt": "^7.4.2",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
     "csv-parser": "^3.0.0",
+    "date-fns": "^3.6.0",
     "express": "^4.19.2",
+    "express-jwt": "^8.4.1",
     "multer": "^1.4.5-lts.1",
     "prisma": "^5.16.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.3"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.6",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/date-fns": "^2.6.0",
+    "@types/jest": "^29.5.12",
+    "@types/k6": "^0.52.0",
+    "@types/multer": "^1.4.11",
+    "@types/supertest": "^6.0.2",
+    "dotenv": "^16.4.5",
+    "jest": "^29.7.0",
+    "jest-mock-extended": "^3.0.7",
+    "k6": "^0.0.0",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.3"
   }
 }
