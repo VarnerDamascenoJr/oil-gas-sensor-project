@@ -1,0 +1,11 @@
+Relatório de Desempenho - Última 1h
+-----------------------------------------
+Média dos tempos de resposta:
+{"results":[{"statement_id":0,"series":[{"name":"http_req_duration","columns":["time","mean"],"values":[["2024-07-21T23:08:23.211711841Z",0.123]]}]}]}
+
+Percentil 95 dos tempos de resposta:
+{"results":[{"statement_id":0,"error":"undefined function p95()"}]}
+
+Número total de requisições:
+{"results":[{"statement_id":0,"series":[{"name":"http_req_duration","columns":["time","count"],"values":[["2024-07-21T23:08:23.239398248Z",1]]}]}]}
+-----------------------------------------
